@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +15,7 @@
     }
 
     body {
-      background: url('bg3.jpg') no-repeat center center/cover;
+      background: url('./assets/images/backgrounds/bg3.jpg') no-repeat center center/cover;
       height: 100vh;
     }
 
@@ -29,7 +30,7 @@
       align-items: center;
       justify-content: space-between;
       padding: 0 60px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
       z-index: 1000;
     }
 
@@ -88,7 +89,7 @@
       justify-content: center;
       align-items: center;
       padding-top: 80px;
-      background: rgba(255,255,255,0.4);
+      background: rgba(255, 255, 255, 0.4);
     }
 
     /* CARD */
@@ -101,7 +102,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
     }
 
     /* TEXT */
@@ -136,7 +137,7 @@
       color: white;
       text-decoration: none;
       font-size: 16px;
-      box-shadow: 0 5px 15px rgba(34,197,94,0.3);
+      box-shadow: 0 5px 15px rgba(34, 197, 94, 0.3);
       transition: 0.2s;
     }
 
@@ -174,12 +175,13 @@
     }
   </style>
 </head>
+
 <body>
 
   <!-- HEADER -->
   <div class="header">
     <div class="logo">
-      <img src="logo.png" alt="logo">
+      <img src="./assets/images/icons/logo.png" alt="logo">
       <div>
         AVSA<br>WASTE
       </div>
@@ -211,7 +213,7 @@
       </div>
 
       <div class="image">
-        <img src="sampah4.png" alt="Ilustrasi Sampah">
+        <img src="./assets/images/icons/sampah4.png" alt="Ilustrasi Sampah">
       </div>
 
     </div>
@@ -222,7 +224,7 @@
     const links = document.querySelectorAll(".nav a");
 
     links.forEach(link => {
-      link.addEventListener("click", function() {
+      link.addEventListener("click", function () {
         links.forEach(l => l.classList.remove("active"));
         this.classList.add("active");
       });
@@ -230,4 +232,5 @@
   </script>
 
 </body>
+
 </html>

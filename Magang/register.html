@@ -1,190 +1,191 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Daftar - AVSA Waste</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daftar - AVSA Waste</title>
 
-<style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
-}
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
 
-/* BACKGROUND */
-body {
-  background: url('bg3.jpg') no-repeat center center/cover;
-  height: 100vh;
-}
+    /* BACKGROUND */
+    body {
+      background: url('./assets/images/backgrounds/bg3.jpg') no-repeat center center/cover;
+      height: 100vh;
+    }
 
-/* OVERLAY */
-.overlay {
-  width: 100%;
-  height: 100vh;
-  background: rgba(255,255,255,0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
+    /* OVERLAY */
+    .overlay {
+      width: 100%;
+      height: 100vh;
+      background: rgba(255, 255, 255, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
 
-/* BACK BUTTON */
-.back-btn {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  width: 60px;
-  height: 60px;
-  background: #DFF9E8;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
+    /* BACK BUTTON */
+    .back-btn {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 60px;
+      height: 60px;
+      background: #DFF9E8;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
 
-.back-btn img {
-  width: 28px;
-}
+    .back-btn img {
+      width: 28px;
+    }
 
-/* WRAPPER */
-.wrapper {
-  display: flex;
-  width: 850px;
-  height: 550px;
-  background: #DFF9E8;
-  border-radius: 20px;
-  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
-  overflow: hidden;
-}
+    /* WRAPPER */
+    .wrapper {
+      display: flex;
+      width: 850px;
+      height: 550px;
+      background: #DFF9E8;
+      border-radius: 20px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+    }
 
-/* LEFT */
-.left {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 20px;
-}
+    /* LEFT */
+    .left {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
 
-.left img {
-  width: 220px;
-  margin-bottom: 20px;
-}
+    .left img {
+      width: 220px;
+      margin-bottom: 20px;
+    }
 
-.left h1 {
-  color: #14532d;
-}
+    .left h1 {
+      color: #14532d;
+    }
 
-.left p {
-  font-size: 14px;
-  color: #555;
-}
+    .left p {
+      font-size: 14px;
+      color: #555;
+    }
 
-/* RIGHT */
-.right {
-  width: 50%;
-  padding: 30px;
-}
+    /* RIGHT */
+    .right {
+      width: 50%;
+      padding: 30px;
+    }
 
-.right h2 {
-  color: #14532d;
-}
+    .right h2 {
+      color: #14532d;
+    }
 
-.subtitle {
-  font-size: 13px;
-  color: #555;
-  margin-bottom: 15px;
-}
+    .subtitle {
+      font-size: 13px;
+      color: #555;
+      margin-bottom: 15px;
+    }
 
-/* INPUT */
-.input {
-  width: 100%;
-  padding: 12px;
-  margin: 8px 0;
-  border-radius: 10px;
-  border: none;
-  background: #eee;
-}
+    /* INPUT */
+    .input {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      border-radius: 10px;
+      border: none;
+      background: #eee;
+    }
 
-/* BUTTON */
-.btn {
-  width: 100%;
-  padding: 14px;
-  margin-top: 10px;
-  background: #22C55E;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-}
+    /* BUTTON */
+    .btn {
+      width: 100%;
+      padding: 14px;
+      margin-top: 10px;
+      background: #22C55E;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
 
-.btn:hover {
-  background: #16A34A;
-}
+    .btn:hover {
+      background: #16A34A;
+    }
 
-/* LOGIN LINK */
-.login-link {
-  text-align: center;
-  margin-top: 10px;
-  font-size: 14px;
-}
+    /* LOGIN LINK */
+    .login-link {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 14px;
+    }
 
-.login-link a {
-  color: #22C55E;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-</style>
+    .login-link a {
+      color: #22C55E;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
 </head>
 
 <body>
 
-<div class="overlay">
+  <div class="overlay">
 
-  <!-- BACK -->
-  <a href="login.html" class="back-btn">
-    <img src="panah.png">
-  </a>
+    <!-- BACK -->
+    <a href="login.html" class="back-btn">
+      <img src="./assets/images/icons/panah.png">
+    </a>
 
-  <div class="wrapper">
+    <div class="wrapper">
 
-    <!-- LEFT -->
-    <div class="left">
-      <img src="sampah6.png">
-      <h1>AVSA WASTE</h1>
-      <p>
-      Jadwalkan penjemputan sampah organik, anorganik, dan B3 langsung dari genggaman
-      </p>
-    </div>
+      <!-- LEFT -->
+      <div class="left">
+        <img src="./assets/images/icons/sampah6.png">
+        <h1>AVSA WASTE</h1>
+        <p>
+          Jadwalkan penjemputan sampah organik, anorganik, dan B3 langsung dari genggaman
+        </p>
+      </div>
 
-    <!-- RIGHT -->
-    <div class="right">
+      <!-- RIGHT -->
+      <div class="right">
 
-      <h2>Buat Akun Baru</h2>
-      <p class="subtitle">Isi data berikut untuk mendaftar</p>
+        <h2>Buat Akun Baru</h2>
+        <p class="subtitle">Isi data berikut untuk mendaftar</p>
 
-      <input class="input" placeholder="Nama Lengkap">
-      <input class="input" placeholder="Nomor HP / Email">
-      <input class="input" type="password" placeholder="Password">
-      <input class="input" type="password" placeholder="Konfirmasi Password">
+        <input class="input" placeholder="Nama Lengkap">
+        <input class="input" placeholder="Nomor HP / Email">
+        <input class="input" type="password" placeholder="Password">
+        <input class="input" type="password" placeholder="Konfirmasi Password">
 
-      <button class="btn">Daftar</button>
+        <button class="btn">Daftar</button>
 
-      <div class="login-link">
-        Sudah punya akun? <a href="login.html">Masuk</a>
+        <div class="login-link">
+          Sudah punya akun? <a href="login.html">Masuk</a>
+        </div>
+
       </div>
 
     </div>
 
   </div>
 
-</div>
-
 </body>
+
 </html>
