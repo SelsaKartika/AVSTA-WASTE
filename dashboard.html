@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard - AVSA Waste</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* BACKGROUND */
+body {
+  background: url('bg3.jpg') no-repeat center center/cover;
+  height: 100vh;
+}
+
+/* HEADER */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  background: #DFF9E8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 60px;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #166534;
+  font-weight: bold;
+}
+
+.logo img {
+  width: 40px;
+}
+
+.nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+}
+
+/* CONTENT */
+.overlay {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+  background: rgba(255,255,255,0.4);
+}
+
+/* CARD */
+.card {
+  width: 350px;
+  background: #DFF9E8;
+  border-radius: 25px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* IMAGE */
+.card img {
+  width: 180px;
+  margin-bottom: 20px;
+}
+
+/* TEXT */
+.card h1 {
+  color: #14532d;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* BUTTON STYLE */
+.btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  margin: 8px 0;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* WARGA */
+.btn-warga {
+  background: #22C55E;
+  color: white;
+}
+
+.btn-warga:hover {
+  background: #16A34A;
+}
+
+/* PETUGAS */
+.btn-petugas {
+  background: white;
+  border: 2px solid #22C55E;
+  color: #22C55E;
+}
+
+.btn-petugas:hover {
+  background: #16A34A;
+  color: white;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <div class="logo">
+    <img src="logo.png">
+    AVSA WASTE
+  </div>
+
+  <div class="nav">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Riwayat</a>
+    <a href="#">Profile</a>
+  </div>
+</div>
+
+<!-- CONTENT -->
+<div class="overlay">
+
+  <div class="card">
+    <img src="sampah5.png">
+
+    <h1>AVSA WASTE</h1>
+
+    <p>
+      Aplikasi pelaporan sampah real-time untuk warga, petugas, dan pengelola lingkungan
+    </p>
+
+    <!-- 🔥 INI YANG PENTING (PASTI JALAN) -->
+    <a href="warga.html" class="btn btn-warga">
+      Masuk Sebagai Warga
+    </a>
+
+    <a href="#" class="btn btn-petugas">
+      Masuk Sebagai Petugas
+    </a>
+
+  </div>
+
+</div>
+
+</body>
+</html>
